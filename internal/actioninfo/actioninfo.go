@@ -21,12 +21,13 @@ func Info(dataset []string, dp DataParser) {
 		if err != nil {
 			log.Println(err)
 		}
-	}
-	str, err := dp.ActionInfo()
 
-	if err != nil {
-		log.Println(err)
-	}
+		str, err := dp.ActionInfo()
 
-	fmt.Println(str)
+		if err != nil {
+			log.Println(err)
+		}
+
+		fmt.Println(str)
+	}
 }
